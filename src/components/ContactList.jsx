@@ -2,7 +2,9 @@ import React from "react";
 import ContactCard from "./ContactCard";
 
 const ContactList = props => {
-  const renderList = props?.contacts.map(contact => {
+  // destructuring
+  const contacts = props.contacts;
+  const renderList = contacts.map(contact => {
     return <ContactCard contact={contact} key={contact.id} />;
   });
   return (
