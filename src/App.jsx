@@ -21,8 +21,10 @@ function App() {
   return (
     <div className="container mx-auto bg-slate-300 min-h-screen">
       <Header />
-      <AddContact />
-      <ContactList contacts={contacts} />
+      <section className="w-[90%] mx-auto">
+        <AddContact />
+        <ContactList contacts={contacts} />
+      </section>
     </div>
   );
 }

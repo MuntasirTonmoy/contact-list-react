@@ -2,7 +2,7 @@ import React from "react";
 
 const AddContact = () => {
   return (
-    <div className=" border border-slate-800 w-[90%] mx-auto my-4 rounded">
+    <div className="my-4 border border-slate-800  rounded">
       <h2 className="text-2xl text-center text-slate-200 p-3 bg-slate-500">
         Add Contact
       </h2>

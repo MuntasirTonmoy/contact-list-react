@@ -1,8 +1,10 @@
 import React from "react";
 
 const ContactList = props => {
-  console.log(props);
-  return <div>Contact List</div>;
+  const renderList = props?.contacts.map(contact => {
+    return <div className="">{contact.name}</div>;
+  });
+  return <div>{renderList}</div>;
 };
 
 export default ContactList;
