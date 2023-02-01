@@ -22,7 +22,7 @@ const AddContact = () => {
         <label htmlFor="email">Email</label>
         <input
           id="email"
-          type="tel"
+          type="email"
           className="block w-full p-1 my-1.5 focus:border focus:border-slate-400 rounded"
         />
         <button className="p-2 mt-3  w-full bg-blue-500 font-semibold rounded text-slate-200">
