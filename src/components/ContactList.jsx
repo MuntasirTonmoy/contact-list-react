@@ -9,8 +9,9 @@ const ContactList = props => {
   });
   return (
     <div>
-      <h2 className="text-2xl py-3">Contact List</h2>
-      <hr className="bg-black" />
+      <h2 className="text-2xl py-3 border-b border-b-slate-500">
+        Contact List
+      </h2>
       {renderList}
     </div>
   );
