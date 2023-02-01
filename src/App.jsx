@@ -5,7 +5,7 @@ import Header from "./components/Header";
 
 function App() {
   return (
-    <div>
+    <div className="container mx-auto bg-slate-300 min-h-screen">
       <Header />
       <AddContact />
       <ContactList />
