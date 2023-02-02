@@ -5,11 +5,17 @@ const AddContact = props => {
   const createContact = e => {
     e.preventDefault();
     const id = crypto.randomUUID();
+    const name = e.target.name.value;
+    const phone = e.target.phone.value;
+    const email = e.target.email.value;
+
+    if (!name || !phone || !email) return;
+
     const newContact = {
-      id: id,
-      name: e.target.name.value,
-      phone: e.target.phone.value,
-      email: e.target.email.value,
+      id,
+      name,
+      phone,
+      email,
     };
     // clear form field
     addContactHandler(newContact);
