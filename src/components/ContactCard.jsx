@@ -8,12 +8,15 @@ const ContactCard = props => {
       <div>
         <h2 className="text-xl capitalize mb-1 mt-2">{name}</h2>
         <p>
-          <a href={`tel:${phone}`} className="pointer text-slate-900 text-xl">
+          <a href={`tel:${phone}`} className="pointer text-slate-900">
             {phone}
           </a>
         </p>
         <p>
-          <a href={`mailto:${email}`} className="pointer text-slate-900">
+          <a
+            href={`mailto:${email}`}
+            className="pointer text-slate-900 text-sm"
+          >
             {email}
           </a>
         </p>

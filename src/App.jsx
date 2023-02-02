@@ -11,13 +11,14 @@ function App() {
   };
 
   useEffect(() => {
-    localStorage.setItem("contacts", JSON.stringify(contacts));
-  }, [contacts]);
-
-  useEffect(() => {
     const retrivedContact = JSON.parse(localStorage.getItem("contacts"));
     if (retrivedContact) setContacts(retrivedContact);
   }, []);
+
+  useEffect(() => {
+    if (contacts.length === 0) return;
+    localStorage.setItem("contacts", JSON.stringify(contacts));
+  }, [contacts]);
 
   return (
     <div className="container mx-auto bg-slate-300 min-h-screen">
