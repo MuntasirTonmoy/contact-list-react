@@ -4,7 +4,9 @@ const AddContact = props => {
   const { addContactHandler } = props;
   const createContact = e => {
     e.preventDefault();
+    const id = crypto.randomUUID();
     const newContact = {
+      id: id,
       name: e.target.name.value,
       phone: e.target.phone.value,
       email: e.target.email.value,
