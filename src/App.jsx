@@ -4,7 +4,7 @@ import ContactList from "./components/ContactList";
 import Header from "./components/Header";
 
 function App() {
-  // if any contacts array in local storage then contacts value will be it or an empty array
+  // if any contacts array in local storage then contacts value will be it else an empty array
   const [contacts, setContacts] = useState(
     JSON.parse(localStorage.getItem("contacts")) ?? []
   );
