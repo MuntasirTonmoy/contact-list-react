@@ -10,6 +10,10 @@ function App() {
     setContacts([...contacts, newContact]);
   };
 
+  const removeContactHandler = id => {
+    console.log(id);
+  };
+
   useEffect(() => {
     const retrivedContact = JSON.parse(localStorage.getItem("contacts"));
     if (retrivedContact) setContacts(retrivedContact);
@@ -25,7 +29,7 @@ function App() {
       <Header />
       <section className="w-[90%] mx-auto">
         <AddContact addContactHandler={addContactHandler} />
-        <ContactList contacts={contacts} />
+        <ContactList contacts={contacts} getId={removeContactHandler} />
       </section>
     </div>
   );

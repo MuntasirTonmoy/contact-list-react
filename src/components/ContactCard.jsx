@@ -2,7 +2,7 @@ import React from "react";
 import { BsTrash } from "react-icons/bs";
 
 const ContactCard = props => {
-  const { name, phone, email } = props.contact;
+  const { id, name, phone, email } = props.contact;
   return (
     <div className="border-b pb-2 border-b-slate-500 flex justify-between items-center ">
       <div className="flex items-center gap-3">
@@ -30,7 +30,10 @@ const ContactCard = props => {
         </div>
       </div>
 
-      <BsTrash className="text-2xl font-bold cursor-pointer" />
+      <BsTrash
+        className="text-2xl font-bold cursor-pointer"
+        onClick={() => props.getId(id)}
+      />
     </div>
   );
 };
