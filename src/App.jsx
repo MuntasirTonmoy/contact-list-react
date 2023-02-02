@@ -11,7 +11,8 @@ function App() {
   };
 
   const removeContactHandler = id => {
-    console.log(id);
+    const remainingContacts = contacts?.filter(contact => contact.id !== id);
+    setContacts(remainingContacts);
   };
 
   useEffect(() => {
