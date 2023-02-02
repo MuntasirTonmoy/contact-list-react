@@ -2,7 +2,9 @@ import React, { useState } from "react";
 
 const AddContact = props => {
   const { addContactHandler } = props;
-  const createContact = e => {};
+  const createContact = e => {
+    e.preventDefault();
+  };
   return (
     <div className="my-4 border border-slate-800  rounded">
       <h2 className="text-2xl text-center text-slate-200 p-3 bg-slate-500">
