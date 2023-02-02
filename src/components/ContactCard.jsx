@@ -1,4 +1,5 @@
 import React from "react";
+import { BsTrash } from "react-icons/bs";
 
 const ContactCard = props => {
   const { name, phone, email } = props.contact;
@@ -28,7 +29,8 @@ const ContactCard = props => {
           </p>
         </div>
       </div>
-      <span className="border-2 border-slate-500 rounded p-2">X</span>
+
+      <BsTrash className="text-2xl font-bold cursor-pointer" />
     </div>
   );
 };
