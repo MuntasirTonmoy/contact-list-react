@@ -4,7 +4,10 @@ import ContactList from "./components/ContactList";
 import Header from "./components/Header";
 
 function App() {
-  const [contacts, setContacts] = useState([]);
+  // if any contacts array in local storage then contacts value will be it or an empty array
+  const [contacts, setContacts] = useState(
+    JSON.parse(localStorage.getItem("contacts")) ?? []
+  );
 
   const addContactHandler = newContact => {
     setContacts([...contacts, newContact]);
@@ -16,12 +19,6 @@ function App() {
   };
 
   useEffect(() => {
-    const retrivedContact = JSON.parse(localStorage.getItem("contacts"));
-    if (retrivedContact) setContacts(retrivedContact);
-  }, []);
-
-  useEffect(() => {
-    if (contacts.length === 0) return;
     localStorage.setItem("contacts", JSON.stringify(contacts));
   }, [contacts]);
 
