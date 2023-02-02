@@ -9,6 +9,9 @@ const AddContact = props => {
       phone: e.target.phone.value,
       email: e.target.email.value,
     };
+    // clear form field
+    addContactHandler(newContact);
+    e.target.reset();
   };
   return (
     <div className="my-4 border border-slate-800  rounded">
