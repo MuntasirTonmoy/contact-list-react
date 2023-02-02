@@ -14,6 +14,11 @@ function App() {
     localStorage.setItem("contacts", JSON.stringify(contacts));
   }, [contacts]);
 
+  useEffect(() => {
+    const retrivedContact = JSON.parse(localStorage.getItem("contacts"));
+    if (retrivedContact) setContacts(retrivedContact);
+  }, []);
+
   return (
     <div className="container mx-auto bg-slate-300 min-h-screen">
       <Header />
