@@ -4,6 +4,11 @@ const AddContact = props => {
   const { addContactHandler } = props;
   const createContact = e => {
     e.preventDefault();
+    const newContact = {
+      name: e.target.name.value,
+      phone: e.target.phone.value,
+      email: e.target.email.value,
+    };
   };
   return (
     <div className="my-4 border border-slate-800  rounded">
