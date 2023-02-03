@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Route, Routes } from "react-router-dom";
 import AddContact from "./components/AddContact";
 import ContactList from "./components/ContactList";
 import Header from "./components/Header";
@@ -25,6 +26,7 @@ function App() {
   return (
     <div className="container mx-auto bg-slate-300 min-h-screen">
       <Header />
+      <Routes></Routes>
       <section className="w-[90%] mx-auto">
         <AddContact addContactHandler={addContactHandler} />
         <ContactList contacts={contacts} getId={removeContactHandler} />
