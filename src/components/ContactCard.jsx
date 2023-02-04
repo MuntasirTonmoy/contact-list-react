@@ -4,7 +4,7 @@ import { BsTrash } from "react-icons/bs";
 const ContactCard = props => {
   const { id, name, phone, email } = props.contact;
   return (
-    <div className="border-b pb-2 border-b-slate-500 flex justify-between items-center ">
+    <div className="border-b pb-2 border-b-slate-500 flex justify-between items-center px-4">
       <div className="flex items-center gap-3">
         <img src="/images/pngegg.png" alt="user" height="40" width="40" />
         <div>

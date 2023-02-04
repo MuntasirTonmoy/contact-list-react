@@ -9,7 +9,7 @@ const ContactList = props => {
       <ContactCard contact={contact} key={contact.id} getId={props.getId} />
     );
   });
-  return <div className="mt-2">{renderList}</div>;
+  return <div className="mt-1">{renderList}</div>;
 };
 
 export default ContactList;
