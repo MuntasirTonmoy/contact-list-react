@@ -33,6 +33,10 @@ const App = () => {
             <ContactList contacts={contacts} getId={removeContactHandler} />
           }
         ></Route>
+        <Route
+          path="/add"
+          element={<AddContact addContactHandler={addContactHandler} />}
+        ></Route>
       </Routes>
     </div>
   );

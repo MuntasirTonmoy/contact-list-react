@@ -22,7 +22,7 @@ const AddContact = props => {
     e.target.reset();
   };
   return (
-    <div className="my-4 border border-slate-800  rounded">
+    <div className="my-8 mx-4 border border-slate-800  rounded">
       <h2 className="text-2xl text-center text-slate-200 p-3 bg-slate-500">
         Add Contact
       </h2>
