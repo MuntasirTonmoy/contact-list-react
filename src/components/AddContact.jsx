@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const AddContact = props => {
+  const navigate = useNavigate();
   const { addContactHandler } = props;
   const createContact = e => {
     e.preventDefault();
@@ -20,6 +22,7 @@ const AddContact = props => {
     // clear form field
     addContactHandler(newContact);
     e.target.reset();
+    navigate("/");
   };
   return (
     <div className="my-8 mx-4 border border-slate-800  rounded">
