@@ -38,6 +38,7 @@ const AddContact = props => {
         <form className="p-3" onSubmit={createContact}>
           <label htmlFor="name">Name</label>
           <input
+            autoFocus
             id="name"
             name="name"
             type="text"
