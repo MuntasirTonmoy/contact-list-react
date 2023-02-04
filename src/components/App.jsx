@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Route, Routes } from "react-router-dom";
 import AddContact from "./AddContact";
 import ContactList from "./ContactList";
 import Header from "./Header";
@@ -24,10 +25,15 @@ const App = () => {
   return (
     <div className="container mx-auto bg-slate-300 min-h-screen">
       <Header />
-      <section className="w-[90%] mx-auto">
-        <AddContact addContactHandler={addContactHandler} />
-        <ContactList contacts={contacts} getId={removeContactHandler} />
-      </section>
+
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <ContactList contacts={contacts} getId={removeContactHandler} />
+          }
+        ></Route>
+      </Routes>
     </div>
   );
 };
