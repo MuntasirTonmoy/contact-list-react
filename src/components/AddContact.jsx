@@ -20,7 +20,7 @@ const AddContact = props => {
       email,
     };
     // clear form field
-    addContactHandler(newContact);
+    // addContactHandler(newContact);
     e.target.reset();
     navigate("/");
   };
