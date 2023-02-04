@@ -6,12 +6,7 @@ const ContactCard = props => {
   return (
     <div className="border-b pb-2 border-b-slate-500 flex justify-between items-center ">
       <div className="flex items-center gap-3">
-        <img
-          src="/public/images/pngegg.png"
-          alt="user"
-          height="40"
-          width="40"
-        />
+        <img src="/images/pngegg.png" alt="user" height="40" width="40" />
         <div>
           <h2 className="text-xl capitalize mb-1 mt-2">{name}</h2>
           <p>

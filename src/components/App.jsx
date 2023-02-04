@@ -3,7 +3,7 @@ import AddContact from "./AddContact";
 import ContactList from "./ContactList";
 import Header from "./Header";
 
-const Home = () => {
+const App = () => {
   // if any contacts array in local storage then contacts value will be it else an empty array
   const [contacts, setContacts] = useState(
     JSON.parse(localStorage.getItem("contacts")) ?? []
@@ -32,4 +32,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default App;
