@@ -20,14 +20,14 @@ const AddContact = props => {
       phone,
       email,
     };
+    addContactHandler(newContact);
     // clear form field
-    // addContactHandler(newContact);
     e.target.reset();
     navigate("/");
   };
   return (
     <>
-      <button className="p-2  mb-4  bg-red-300 w-full  font-semibold flex items-center justify-center gap-1">
+      <button className="p-2  mb-4 bg-blue-300 w-full  font-semibold flex items-center justify-center gap-1">
         <BiLeftArrowAlt className="text-xl" />
         <Link to="/">Back</Link>
       </button>
