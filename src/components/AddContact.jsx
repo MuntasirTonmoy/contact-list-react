@@ -27,10 +27,12 @@ const AddContact = props => {
   };
   return (
     <>
-      <button className="p-2  mb-4 bg-blue-300 w-full  font-semibold flex items-center justify-center gap-1">
-        <BiLeftArrowAlt className="text-xl" />
-        <Link to="/">Back</Link>
-      </button>
+      <Link to="/">
+        <button className="p-2  mb-4 bg-blue-300 w-full  font-semibold flex items-center justify-center gap-1">
+          <BiLeftArrowAlt className="text-xl" />
+          Back
+        </button>
+      </Link>
       <div className="mb-8 mx-4 border border-slate-800  rounded">
         <h2 className="text-2xl text-center text-slate-200 p-3 bg-slate-500">
           Add Contact

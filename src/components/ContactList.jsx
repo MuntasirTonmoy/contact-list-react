@@ -13,10 +13,12 @@ const ContactList = props => {
   });
   return (
     <>
-      <button className="p-3 w-full bg-blue-500 font-semibold text-slate-200 flex items-center justify-center gap-2">
-        <BsFillPersonPlusFill className="font-bold text-xl" />
-        <Link to="/add">Add Contact</Link>
-      </button>
+      <Link to="/add">
+        <button className="p-3 w-full bg-blue-500 font-semibold text-slate-200 flex items-center justify-center gap-2">
+          <BsFillPersonPlusFill className="font-bold text-xl" />
+          Add Contact
+        </button>
+      </Link>
       <div className="mt-1">{renderList}</div>
     </>
   );
